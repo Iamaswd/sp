@@ -15,4 +15,3 @@ const max = () => {
     }
     console.log(maxNum);
 }
-const 
