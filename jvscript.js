@@ -1,17 +1,27 @@
-const max = () => {
-    let a = parseInt(prompt("type a = "))
-    let b = parseInt(prompt("type b = "))
-    let c = parseInt(prompt("type c = "))
-    let d = parseInt(prompt("type d = "))
-    let maxNum;
-    if (a > b && a > c && a > d) {
-        maxNum = a;
-    } else if (b > a && b > c && b > d) {
-        maxNum = b;
-    } else if (c > a && c > b && c > d) {
-        maxNum = c;
-    } else {
-        maxNum = d;
+let arr = [
+    {
+        "name": "Cleansing Gel",
+        "price": 100,
+        "image": "./iMAGE/main.jpg"
+    },
+    {
+        "name": "Toner",
+        "price": 150,
+        "image": "./iMAGE/Copy of 15.jpg"
+    },
+    {
+        "name": "Moisturizer",
+        "price": 200,
+        "image": "./iMAGE/main.jpg"
     }
-    console.log(maxNum);
-}
+]
+let getToner = document.getElementById("toner");
+getToner.innerHTML = arr.map((item) => {
+    return `<div class="product">
+                <img class="image-toner" src="${item.image}" alt="">
+                    <h2>${item.name}</h2>
+                    <p>Price: $${item.price}</p>
+                
+            </div>`;
+}).join("");
+console.log(getText);
