@@ -1,3 +1,14 @@
 .image-toner{
     width: 100px;
 }
+#toner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  max-width: 750px;
+  margin: 0 auto;
+}
+.product {
+  flex: 0 0 220px; /* Each item takes up about 220px, adjust as you like */
+}

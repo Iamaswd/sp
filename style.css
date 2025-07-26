@@ -379,6 +379,7 @@
     #toner {
         display: flex;
         justify-content: space-around;
+        flex-wrap: wrap;
         align-items: center;
         flex-direction: row; 
     }
@@ -386,3 +387,12 @@
     transform: scale(1.1);
     transition: 0.3s;
 }       
+.product {
+    display: inline-block;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+    flex: 0 0 220px; /* Each item takes up about 220px, adjust as you like */
+}
